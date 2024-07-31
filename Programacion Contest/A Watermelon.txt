@@ -1,0 +1,13 @@
+import java.io.*;
+
+class Main{
+public static void main (String [] args) throws IOException {
+    BufferedReader teclado = new BufferedReader (new   InputStreamReader (System.in));
+int peso = Integer.parseInt(teclado.readLine());
+  if (peso > 2 && peso <= 100 && peso % 2 == 0 ) // 2 es numero par pero dividiendolo resulta en numeros impares
+  System.out.println("YES");
+
+else
+  System.out.println("NO");
+ }
+}
